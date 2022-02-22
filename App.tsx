@@ -27,6 +27,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import {VideoFeed} from 'react-native-firework-sdk';
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -42,6 +44,7 @@ const Section: React.FC<{
         ]}>
         {title}
       </Text>
+      <VideoFeed style={{height: 200}} source="discover" />
       <Text
         style={[
           styles.sectionDescription,

@@ -15,11 +15,17 @@
         android:label="@string/app_name"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
         android:launchMode="singleTask"
-        android:windowSoftInputMode="adjustResize">
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+
+        <meta-data
+                android:name="Firework:Appid"
+                android:value="a88f229debf60f9299816075b80b6071fe9e84a593aa3b223d47010328951826" />
+
     </application>
 </manifest>
